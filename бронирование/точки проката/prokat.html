@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точки проката</title>
+    <link rel="stylesheet" href="prokat.css">
+</head>
+<body>
+  <!--Шапка-->
+    <div class="header">
+        <div class="header-fields">
+            <img class="img" src="logo/логотип.png" alt="logo">
+        </div>
+    </div>
+
+    <!--Контент-->
+    <main>
+        <div class="container">
+            <div class="content">
+              <h1>Точки проката</h1><br>
+              <p>Нажмите на точку проката, и  вам отобразится
+                количество электросамокатов, доступных к 
+                бронированию.</p>
+              </div>     
+                <div class="map">
+                  <!--Карта-->
+                    <map name="myMap" class="map">
+                        <area shape="circle" coords="253,266,316" href="#modal1" alt="Область 1">
+                        <area shape="circle" coords="1223,76,1304" href="#modal2" alt="Область 2">
+                        <area shape="circle" coords="1336,548,1400" href="#modal3" alt="Область 3">
+                      </map>
+                    <img src="карта.png" usemap="#myMap">
+                </div>
+                  <!-- Модальное окно 1 -->            
+                <div id="modal1" class="modal">
+                    <div class="modal-content">  
+                        <div class="text">
+                        <h1>Саяны</h1>
+                      <p>Свободно 3 электросамоката.</p>
+                      <button class="btn"><a href="бронь/bron.html">Забронировать</a></button>   
+                        </div>                   
+
+                      <div class="close">&#10006</div>
+                    </div>
+                  </div>
+                
+                  <!-- Модальное окно 2 -->
+                  <div id="modal2" class="modal">
+                    <div class="modal-content">
+                      <div class="text">
+                      <h1>ПКиО</h1>
+                      <p>Свободно электросамокатов 6.</p>
+                      <button class="btn"><a href="бронь/bron.html">Забронировать</a></button>
+                      </div>
+
+                      <div class="close">&#10006</div>
+                    </div>
+                  </div>
+                
+                  <!-- Модальное окно 3 -->
+                  <div id="modal3" class="modal">
+                    <div class="modal-content">
+                      <div class="text">
+                      <h1>Национальный краеведческий музей</h1>
+                      <p>Свободно электросамокатов 2</p>
+                      <button class="btn"><a href="бронь/bron.html">Забронировать</a></button>
+                      </div>
+
+                      <div class="close">&#10006</div>
+                    </div>
+                  </div>
+
+        </div>
+    </main>
+ <script src="prokat.js"></script>   
+</body>
+</html>

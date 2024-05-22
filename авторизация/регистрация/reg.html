@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+
+    <!--Контент-->
+ <div class="wrapper">
+    <h2>Регистрация</h2>
+    <form action="#">
+        <!--Поля для ввода информации-->
+        <div class="input-box">
+            <input type="text" id="name" placeholder="ФИО" required>
+        </div>
+        <div class="input-box">
+            <input type="phone" id="phone" placeholder="номер телефона" required>
+        </div>
+        <div class="input-box">
+            <input type="email" id="email" placeholder="email" required>
+        </div>
+        <div class="input-box">
+            <input type="email" id="password" placeholder="пароль" required>
+        </div>
+        <div class="input-box">
+            <input type="email" id="password_check" placeholder="подтверждение пароля" required>
+        </div>
+
+        <!--Чокбокс для соглашения пользователя-->
+        <div class="policy">
+            <input type="checkbox">
+            <h3>Я согласен с политикой конфиденциальности и даю согласие на обработку персональных данных.</h3>
+        </div>
+
+        <!--Кнопка-->
+        <div class="input-box button">
+            <input type="submit" style="border: 1.5px solid #C7BEBE;" value="Зарегистрироваться">
+        </div>
+
+        <!--Ссылка для авторизации-->
+        <div class="text">
+            <h3>Уже есть аккаунт? <a href="logIn/login.html">Авторизуйтесь сейчас</a> </h3>
+        </div>
+    </form>
+ </div> 
+ <script src="reg.js"></script>  
+</body>
+</html>
