@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="личный кабинет js css/account.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-fields">
+            <img class="img" src="личный кабинет js css/logo/логотип.png" alt="logo">
+        </div>
+    </div>
+
+    <main>
+        <div class="account">
+
+        <div class="sidebar">
+            <h2>Личный кабинет</h2>
+        </div>
+        
+        <div class="content">
+            <h2>Мой аккаунт</h2>
+        
+            <!-- Вкладка "Мой аккаунт" -->
+            <div class="my-account">
+                <img src="личный кабинет js css/logo/ава 1.png" alt="Фотография пользователя" style="width: 150px; height: 150px;">
+                <form class="account-form">
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" name="lastName" value="Иванов" required readonly><br>
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" name="firstName" value="Иван" required readonly><br>
+                    <label for="middleName">Отчество:</label>
+                    <input type="text" id="middleName" name="middleName" value="Иванович" required readonly><br>
+                    <button type="button" class="editBtn" onclick="editData()">Редактировать данные</button>
+                    <button type="submit" class="saveBtn" style="display: none;">Сохранить изменения</button>
+                </form>
+            </div>
+            <div class="text-1">
+                <p>На вашем аккаунте 10 баллов!</p>
+            </div>
+            <div class="text-2">
+                <p>Всего бронирований: 4</p>
+            </div>
+        
+            <!-- Вкладка "История бронирования" -->
+            <div id="bookingHistory" style="display: none;">
+                <h3>История бронирования</h3>
+                <!-- Здесь будет отображаться история бронирования -->
+            </div>
+        </div>
+        </div>
+    </main>
+
+<script src="личный кабинет js css/account.js"></script>  
+</body>
+</html>

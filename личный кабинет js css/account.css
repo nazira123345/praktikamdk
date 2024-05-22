@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgba(27, 27, 27, 1);
+}
+.header{
+    background-color: rgba(245, 51, 62, 1);
+    height: 95px;
+}
+.header-fields{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 50%;
+}
+.img{
+    margin: 15px 15px auto;
+    width: 160px;
+    height: 70px;
+}
+ul{
+    text-align: center;
+  margin-top: 30%;
+  font-size: 25px;
+  text-decoration: none;
+  list-style: none;
+}
+.account{
+    display: flex;    
+    max-width: 100%;
+}
+.my-account{
+    display: flex; 
+    position: relative;
+    margin-top: 35px;
+}
+.account-form{
+    position: absolute;
+    top: 0;
+    right: 60%;
+}
+.sidebar {
+    width: 200px;
+    background-color: #f5333e;
+    padding: 20px;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    height: 100vh;
+    background-color: #272727;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.text-1{
+    position: absolute;
+  bottom: 45%;
+  text-align: center;
+  left: 25%;
+  width: 290px;
+  background: black;
+  height: 35px;
+  border-radius: 20px;
+  align-content: center;
+}
+.text-2{
+    position: absolute;
+  bottom: 45%;
+  text-align: center;
+  width: 250px;
+  background: black;
+  height: 35px;
+  border-radius: 20px;
+  align-content: center;
+}
+button{
+    font-size: 13px;
+    color: #fff;
+    width: 100%;
+    background: rgba(27, 27, 27, 1);
+    border-radius: 35px; 
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+button:hover{
+    transition: 0.3s ease;
+    background-color: white;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px rgb(27, 27, 27);
+}
+@media (max-width:320px) {
+    .header{
+        height: 35px;
+    }
+    .account{
+        max-width: 100%;
+    }
+    .sidebar{
+        width: 200px;
+        padding: 20px;
+    }
+}

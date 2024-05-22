@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <link rel="stylesheet" href="бронирование js css/точки проката/бронь/bron.css">
+</head>
+<body>
+
+    <!--Контент-->
+    <div class="wrapper">
+        <h2>Бронирование</h2>
+        <form action="#">
+            <!--Поля для ввода информации-->
+            <div class="input-box">
+                <input type="text" id="name" placeholder="ФИО" required>
+            </div>
+            <div class="input-box">
+                <input type="phone" id="phone" placeholder="Номер телефона" required>
+            </div>
+
+            <div class="input-box">
+                <input   type="datetime-local" id="meeting-time" name="meeting-time" value="2024-06-12T19:30" placeholder="Дата и время бронмрования">
+                </div>
+
+            <div class="input-box">
+            <input type="text" id="bank-card-input" placeholder="Номер банковской карты">
+            </div>
+
+            <!--Чокбокс для соглашения пользователя-->
+            <div class="policy">
+                <input type="checkbox">
+                <h3>Я согласен с политикой конфиденциальности и даю согласие на обработку персональных данных.</h3>
+            </div>
+    
+            <!--Кнопка-->
+            <div class="input-box button">
+                <input type="submit" style="border: 1.5px solid #C7BEBE;" value="Забронировать">
+            </div>
+        </form>
+     </div> 
+
+   <script src="бронирование js css/точки проката/бронь/bron.js"></script> 
+</body>
+</html>
